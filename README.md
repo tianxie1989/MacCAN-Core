@@ -1,8 +1,8 @@
 ### Creation of USB User-Space Drivers for CAN Interfaces under macOS&reg;
 
-_Copyright &copy; 2012-2020  Uwe Vogt, UV Software, Berlin (info@mac-can.com)_
+_Copyright &copy; 2012-2021  Uwe Vogt, UV Software, Berlin (info@mac-can.com)_
 
-Version $Rev: 940 $
+Version $Rev: 978 $
 
 # Running CAN and CAN FD on a Mac&reg;
 
@@ -82,6 +82,7 @@ public:
         ReceiverEmpty = CANERR_RX_EMPTY,  ///< receiver empty
         ErrorFrame = CANERR_ERR_FRAME,  ///< error frame
         Timeout = CANERR_TIMEOUT,  ///< timed out
+        ResourceError = CANERR_RESOURCE,  ///< resource allocation
         InvalidBaudrate = CANERR_BAUDRATE,  ///<  illegal baudrate
         IllegalParameter = CANERR_ILLPARA,  ///< illegal parameter
         NullPointer = CANERR_NULLPTR,  ///< null-pointer assignment
