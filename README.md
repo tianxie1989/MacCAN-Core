@@ -2,7 +2,7 @@
 
 _Copyright &copy; 2012-2021   Uwe Vogt, UV Software, Berlin (info@mac-can.com)_
 
-Version $Rev: 984 $
+Version $Rev: 988 $
 
 # Running CAN and CAN FD on a Mac&reg;
 
@@ -25,7 +25,7 @@ But that poor boy only owned a Mac.
 In the absence of a CAN driver for Mac, I started developing an OS X user space driver for my PEAK USB-to-CAN dongle.
 Many thanks to Uwe Wilhelm, CEO of PEAK-System Technik GmbH, who had supported me with technical information and several hardware.
 
-### PCBUSB Library
+### PCBUSB Library for PEAK´s PCAN-USB Interfaces
 
 The _PCBUSB_ library realizes a USB user-space driver under macOS for PCAN&reg; USB interfaces from PEAK-System Technik.
 See the [MacCAN](https://www.mac-can.com) website for further information, downloads and links.
@@ -291,7 +291,7 @@ public:
 /// \brief  Methods for DLC conversion.
 /// \{
 public:
-    static uint8_t DLc2Len(uint8_t dlc);
+    static uint8_t Dlc2Len(uint8_t dlc);
     static uint8_t Len2Dlc(uint8_t len);
 /// \}
 };
